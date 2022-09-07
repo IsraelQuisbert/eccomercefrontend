@@ -14,7 +14,7 @@ function App() {
   const isLoading = useSelector(state => state.loading)
 
   return (
-    <div className="App">
+    <div className="App vw vh">
       <HashRouter>
         <NavBar/>
           { isLoading && <LoadingScreen />}
@@ -33,3 +33,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
+

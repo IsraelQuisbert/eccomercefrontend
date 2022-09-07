@@ -4,8 +4,12 @@
 }
 
 .vh{
-  height: 100%;
+  height: 100vh;
   color: red
+}
+.vw{
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .Buys{
@@ -49,3 +53,12 @@
 div>h2{
   margin: 40px 0;
 }
+
+.padding{
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+

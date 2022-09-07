@@ -40,7 +40,7 @@ const Products = () => {
         <div>
             <div className='flex-w'>
                 <p><Link to="/" style={{textDecoration: "none"}}><h2>Home</h2></Link></p>
-                <p>⭕</p>
+                
                 <p><h4>{product.title}</h4></p>
             </div>
             <div className='flex-w j-c' >

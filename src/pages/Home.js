@@ -31,7 +31,7 @@ const Home = () => {
     // console.log(products);
 
     return (
-        <div className='vh'>
+        <div className='padding'>
             <Row>
                 <Col lg={3} style={{paddingTop: "20px"}}>
                     <h4>Categories</h4>
@@ -84,20 +84,6 @@ const Home = () => {
 
                 </Col>
             </Row>
-
-            {/* <form onSubmit={filterProduct}>
-            </form> */}
-                
-            {/* {
-                products.map(product => (
-                    <Card key={product.id} onClick={() => navigate(`/products/${product.id}`)} >
-                        <img src={product.productImgs[0]} alt="" height="250px" />
-                        <p>{product.title}</p>
-                        <p>price: <b>${product.price}</b></p>
-                        <div><button >💲 Comprar 🤝</button></div>
-                    </Card>
-                ))
-            } */}
         </div>
     );
 };
