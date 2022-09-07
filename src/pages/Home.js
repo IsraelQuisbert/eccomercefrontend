@@ -3,14 +3,12 @@ import React, { useEffect, useState } from 'react';
 import { Card, Row, Col, ListGroup, InputGroup, Form, Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-// import productsSlice from '../store/slices/products.slice';
 import { filterForCategoryThunk, filterForNameThunk, getProductsThunk } from '../store/slices/products.slice';
 
 const Home = () => {
 
     const dispatch = useDispatch()
     const navigate = useNavigate()
-
     const [search, setSearch] = useState("")
     const [categories, setCategories] = useState([])
 
@@ -22,13 +20,6 @@ const Home = () => {
         axios.get("https://ecommerce-api-react.herokuapp.com/api/v1/products/categories")
             .then(res => setCategories(res.data.data.categories))
     }, [dispatch])
-
-    // const filterProduct = (e) =>{
-    //     e.preventDefault()
-    //     dispatch(filterForNameThunk(search))
-    // }
-
-    // console.log(products);
 
     return (
         <div className='padding'>
